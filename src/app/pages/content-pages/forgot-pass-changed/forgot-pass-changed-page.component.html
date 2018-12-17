@@ -1,0 +1,34 @@
+<!--Forgot Password Starts-->
+<section id="forgot-password">
+    <div class="container-fluid">
+        <div class="row full-height-vh gradient-aqua-marine">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <img src="assets/img/logos/agendameya_logotipo.png" alt="company-logo" style="width: 320px">
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <div class="card p-4 box-shadow-2">
+                    <div class="card-body">
+                        <div class="card-block">
+                            <p style="margin-bottom: 0;text-align: center;max-width: 300px" class="text-muted f-12">Te hemos enviado una <b>contraseña temporal</b>, revisa tu correo e ingresala además de tu <b>nueva contraseña</b></p>
+                            <form class="pt-2" (ngSubmit)="onSubmit()" #f="ngForm">
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-control-lg" name="inputPass1" id="inputPass1" placeholder="Contraseña Temporal" ngModel>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-control-lg" name="inputPass2" id="inputPass2" placeholder="Nueva Contraseña" ngModel>
+                                </div>
+                                <div class="form-group pt-2">
+                                    <div class="text-center mt-3">
+                                        <button type="button" class="btn btn-danger btn-forgot btn-raised px-4 py-2 text-uppercase white font-small-4 box-shadow-2 border-0">Cambiar Contraseña</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Forgot Password Ends-->

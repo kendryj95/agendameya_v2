@@ -15,7 +15,7 @@ export const ROUTES: RouteInfo[] = [
                 path: '/clientes', title: 'Bases de Datos', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
             },
             {
-                path: 'javascript;', title: 'Fichas', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+                path: 'javascript:;', title: 'Fichas', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
             }
         ]
     },
@@ -26,6 +26,18 @@ export const ROUTES: RouteInfo[] = [
             },
             {
                 path: '/franquicias', title: 'Franquicias', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+            },
+            {
+                path: '/admins', title: 'Administradores', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+            },
+            {
+                path: '/locales', title: 'Locales', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+            },
+            {
+                path: '/prestadores', title: 'Prestadores', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+            },
+            {
+                path: '/asistentes', title: 'Asistentes', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
             }
         ]
     },

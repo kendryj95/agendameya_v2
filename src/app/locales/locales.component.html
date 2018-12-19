@@ -1,0 +1,222 @@
+<div class="card">
+	<div class="card-block">
+		<div class="row">
+			<div class="col-md-5">
+				<label for="search">Buscar</label>
+				<input type="text" class="form-control round">
+			</div>
+			<div class="col-md-1">
+				<label for="">&nbsp;</label>
+				<button class="btn btn-primary btn-raised">
+					Buscar
+				</button>
+			</div>
+			<div class="col-md-6 text-right" style="padding-top: 2rem !important">
+				<button class="btn btn-primary btn-raised">
+					Agregar
+				</button>
+				<button class="btn btn-primary btn-raised ml-1">
+					Editar
+				</button>
+				<button class="btn btn-primary btn-raised ml-1">
+					Desactivar
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card-block">
+		<!-- <div class="card-header">
+			<h5>Clientes</h5>
+		</div> -->
+		<div class="row">
+			<div class="col-md-3">
+
+				<h5>Locales</h5>
+
+				<ul class="list-group mt-4">
+				    <a href="javascript:;">
+				    	<li class="list-group-item active">
+				    		<strong class="font-medium-3">Local 1</strong><br>
+				    		<span>Activo</span>
+						</li></a>
+				        <a href="javascript:;">
+				        	<li class="list-group-item">
+				        		<strong class="font-medium-3">Local 2</strong><br>
+				        		<span>Desactivado</span>
+				    		</li></a>
+				</ul>
+			</div>
+			<div class="col-md-4">
+
+				<h5>Detalles</h5>
+
+				<form class="form mt-4">
+					<div class="form-body">
+
+						<div class="form-group">
+							<label for="name">Nombre</label>
+							<input type="text" id="name" class="form-control round" name="name" value="Local 1">
+						</div>
+
+						<div class="form-group">
+							<label for="address">Dirección</label>
+							<input type="text" id="address" class="form-control round" name="address" value="Miraflores 422, Vitacura.">
+						</div>
+
+
+						<div class="form-group">
+							<label for="phone">Teléfono principal</label>
+							<input type="text" id="phone" class="form-control round" name="phone" value="987415236">
+						</div>
+
+						<div class="form-group">
+				            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+				                <input type="checkbox" class="custom-control-input" id="whatsapp">
+				                <label class="custom-control-label float-left" for="whatsapp">Activar envio de whatsapp <i class="icon-info text-primary"></i></label>
+				            </div>
+				        </div>
+						<div class="form-group">
+							<input type="text" id="phoneMovil" class="form-control round" name="phoneMovil" placeholder="Número de whatsapp empresas" value="">
+						</div>
+						<div class="form-group">
+				            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+				                <input type="checkbox" class="custom-control-input" id="service">
+				                <label class="custom-control-label float-left" for="service">Solo servicio a domicilio</label>
+				            </div>
+						</div>
+						
+						<div class="form-group">
+							<label for="email">Correo del Local</label>
+							<input type="email" id="email" class="form-control round" name="email" value="correo@local1.cl">
+						</div>
+
+						<div class="form-group">
+				            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+				                <input type="checkbox" class="custom-control-input" checked id="agenda_online">
+				                <label class="custom-control-label float-left" for="agenda_online">Recibe Agendas en línea por clientes</label>
+				            </div>
+						</div>
+
+						<div class="form-group">
+				            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+				                <input type="checkbox" class="custom-control-input" checked id="active">
+				                <label class="custom-control-label float-left" for="active">Activo</label>
+				            </div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-5" style="height: 670px; overflow: auto;">
+				<h5>Horario de atención</h5>				
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4 text-center">
+						Inicio
+					</div>
+					<div class="col-md-4">
+						Término
+					</div>
+					<div class="col-md-4 dias" dias>
+						Lunes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias">
+						Martes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias">
+						Miércoles
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias">
+						Jueves
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias">
+						Viernes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias">
+						Sábado
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias">
+						Domingo
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12">
+						<button class="btn btn-default btn-raised pull-right">
+							Agregar periodo descanso
+						</button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4 text-center">Inicio</div>
+					<div class="col-md-4 text-center">Término</div>
+					<div class="col-md-4 dias">
+						Lunes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias">
+						Martes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

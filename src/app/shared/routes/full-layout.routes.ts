@@ -20,8 +20,24 @@ export const Full_ROUTES: Routes = [
     loadChildren: './superadmins/superadmins.module#SuperadminsModule'
   },
   {
+    path: 'admins',
+    loadChildren: './admins/admins.module#AdminsModule'
+  },
+  {
     path: 'franquicias',
     loadChildren: './franquicias/franquicias.module#FranquiciasModule'
+  },
+  {
+    path: 'locales',
+    loadChildren: './locales/locales.module#LocalesModule'
+  },
+  {
+    path: 'prestadores',
+    loadChildren: './prestadores/prestadores.module#PrestadoresModule'
+  },
+  {
+    path: 'asistentes',
+    loadChildren: './asistentes/asistentes.module#AsistentesModule'
   },
   {
     path: 'charts',

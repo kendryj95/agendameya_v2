@@ -38,6 +38,9 @@ export const ROUTES: RouteInfo[] = [
             },
             {
                 path: '/asistentes', title: 'Asistentes', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+            },
+            {
+                path: '/servicios', title: 'Servicios', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
             }
         ]
     },

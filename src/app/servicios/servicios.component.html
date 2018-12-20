@@ -1,0 +1,234 @@
+<div class="card">
+	<div class="card-block">
+		<div class="row">
+			<div class="col-md-5">
+				<label for="search">Buscar</label>
+				<input type="text" class="form-control round">
+			</div>
+			<div class="col-md-1">
+				<label for="">&nbsp;</label>
+				<button class="btn btn-primary btn-raised">
+					Buscar
+				</button>
+			</div>
+			<div class="col-md-6 text-right" style="padding-top: 2rem !important">
+				<button class="btn btn-primary btn-raised">
+					Agregar
+				</button>
+				<button class="btn btn-primary btn-raised ml-1">
+					Editar
+				</button>
+				<button class="btn btn-primary btn-raised ml-1">
+					Desactivar
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card-block">
+		<!-- <div class="card-header">
+			<h5>Clientes</h5>
+		</div> -->
+
+		<ngb-tabset>
+		  <ngb-tab title="Servicios">
+		    <ng-template ngbTabContent>
+		      <div class="row">
+		      	<div class="col-md-4">
+
+		      		<h5>Servicios</h5>
+
+		      		<ul class="list-group mt-4">
+		      		    <a href="javascript;">
+		      		    	<li class="list-group-item active">
+		      		    		<strong class="font-medium-3">NombreA - FranquiciaA</strong><br>
+		      		    		<span>30min</span>, <span>$50 Pesos Argentino</span>
+		      				</li></a>
+		      		        <a href="javascript;">
+		      		        	<li class="list-group-item">
+		      		        		<strong class="font-medium-3">NombreB - FranquiciaB</strong><br>
+		      		        		<span>60min</span>, <span>USD25 Dolares Americanos</span>
+		      		    		</li></a>
+		      		</ul>
+		      	</div>
+		      	<div class="col-md-4">
+
+		      		<h5>Detalles</h5>
+
+		      		<form class="form mt-4">
+		      			<div class="form-body">
+
+		      				<div class="form-group">
+		      					<label for="name">Franquicia</label>
+		      					<select name="franquicia" id="franquicia" class="form-control">
+		      						<option value="" selected>EmpresaA</option>
+		      					</select>
+		      				</div>
+
+		      				<div class="form-group">
+		      					<label for="name">Nombre</label>
+		      					<input type="text" id="name" class="form-control round" name="name" value="NombreC">
+		      				</div>
+
+		      				<div class="form-group">
+		      					<label for="duracion">Duración (Minutos)</label>
+		      					<input type="number" id="duracion" class="form-control round" name="duracion" value="20">
+		      				</div>
+
+
+		      				<div class="form-group">
+		      					<label for="price">Precio</label>
+		      					<input type="number" id="price" class="form-control round" name="price" value="987415236">
+		      				</div>
+
+
+		      				<div class="form-group">
+		      					<label for="currency">Moneda</label>
+		      					<select name="currency" id="currency" class="form-control">
+		      						<option value="USD">Dolares Americanos (USD)</option>
+		      						<option value="Reales">Reales (R$)</option>
+		      						<option value="PesosMex">Pesos Mexicanos ($)</option>
+		      						<option value="PesosChi">Pesos Chileno ($)</option>
+		      						<option value="PesosArg">Pesos Argentino ($)</option>
+		      						<option value="PesosCol">Pesos Colombianos ($)</option>
+		      						<option value="Soles">Soles (S/.)</option>
+		      						<option value="Quetzal">Quetzal (Q)</option>
+		      						<option value="PesosUru">Pesos Uruguayos ($)</option>
+		      						<option value="Balboa">Balboa (B/.)</option>
+		      						<option value="Bolivares">Bolivares (Bs.)</option>
+		      					</select>
+		      				</div>
+
+		      				<div class="form-group">
+		      					<label for="category">Categoría de servicio</label>
+		      					<input type="text" id="category" class="form-control round" name="category" value="Categoria A">
+		      				</div>
+
+		      				<div class="form-group">
+		      					<label for="category">Descripción *</label>
+		      					<textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Descripción"></textarea>
+		      				</div>
+		      			</div>
+		      		</form>
+		      	</div>
+		      	<div class="col-md-4">
+
+		      		<form action="" class="form" style="margin-top: 3.6rem !important">
+		      		    <div class="form-body">
+		      		        <div class="form-group">
+		      		            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+		      		                <input type="checkbox" class="custom-control-input" checked id="number_session">
+		      		                <label class="custom-control-label float-left" for="number_session">Limitar numero de sesiones en el mismo horario</label>
+		      		            </div>
+		      		        </div>
+		      		        
+		      		        
+		      		        <div class="form-group">
+		      		            <label for="mode">Modo atenciones</label>
+		      		            <select name="mode" id="mode" class="form-control">
+		      		            	<option value="FixedAco">Fixed acotada</option>
+		      		            	<option value="Flexible">Flexible ilimitada</option>
+		      		            </select>
+		      		        </div>
+		      		        
+		      		        
+		      		        <div class="form-group">
+		      		            <label for="atenciones">Atenciones durante el mismo horario</label>
+		      		            <input type="number" id="atenciones" class="form-control round" name="atenciones" value="2">
+		      		        </div>
+		      		        
+		      		        <div class="form-group">
+		      		            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+		      		                <input type="checkbox" class="custom-control-input" checked id="number_session">
+		      		                <label class="custom-control-label float-left" for="number_session">Servicio requiere sesiones</label>
+		      		            </div>
+		      		        </div>
+
+		      		        <div class="form-group">
+		      		            <label for="cant_sessions">Cantidad de sesiones</label>
+		      		            <input type="number" id="cant_sessions" class="form-control round" name="cant_sessions" value="2">
+		      		        </div>
+
+		      		        <div class="form-group">
+		      		            <label for="indications">Indicaciones</label>
+		      		            <textarea name="indications" id="indications" cols="30" rows="10" class="form-control" placeholder="Describa indicaciones o instrucciones a sus clientes"></textarea>
+		      		        </div>
+
+		      		        <div class="form-group">
+		      		            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+		      		                <input type="checkbox" class="custom-control-input" checked id="servicio_dom">
+		      		                <label class="custom-control-label float-left" for="servicio_dom">Servicio a domicilio</label>
+		      		            </div>
+		      		        </div>
+		      		        <div class="form-group">
+		      		            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+		      		                <input type="checkbox" class="custom-control-input" checked id="res_linea">
+		      		                <label class="custom-control-label float-left" for="res_linea">Permite reservas en linea a clientes</label>
+		      		            </div>
+		      		        </div>
+		      		        <div class="form-group">
+		      		            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+		      		                <input type="checkbox" class="custom-control-input" checked id="active">
+		      		                <label class="custom-control-label float-left" for="active">Activo</label>
+		      		            </div>
+		      		        </div>
+		      		    </div>
+		      		</form>
+		      	</div>
+		      </div>
+		    </ng-template>
+		  </ngb-tab>
+		  <ngb-tab>
+		    <ng-template ngbTabTitle>
+		      Categorías</ng-template>
+		    <ng-template ngbTabContent>
+		      <div class="row">
+		      	<div class="col-md-4">
+
+		      		<h5>Categorías</h5>
+
+		      		<ul class="list-group mt-4">
+		      		    <a href="javascript;">
+		      		    	<li class="list-group-item active">
+		      		    		<strong class="font-medium-3">CategoríaA</strong><br>
+		      				</li></a>
+		      		        <a href="javascript;">
+		      		        	<li class="list-group-item">
+		      		        		<strong class="font-medium-3">CategoríaB</strong><br>
+		      		    		</li></a>
+		      		</ul>
+		      	</div>
+		      	<div class="col-md-4">
+
+		      		<h5>Detalles</h5>
+
+		      		<form class="form mt-4">
+		      			<div class="form-body">
+
+		      				<div class="form-group">
+		      					<label for="name">Franquicia</label>
+		      					<select name="franquicia" id="franquicia" class="form-control">
+		      						<option value="" selected>EmpresaA</option>
+		      					</select>
+		      				</div>
+
+		      				<div class="form-group">
+		      					<label for="name">Nombre</label>
+		      					<input type="text" id="name" class="form-control round" name="name" value="CategoríaA">
+		      				</div>
+
+		      				<div class="form-group">
+		      					<label for="description">Descripcion *</label>
+		      					<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Descripción"></textarea>
+		      				</div>
+		      			</div>
+		      		</form>
+		      	</div>
+		      </div>
+		    </ng-template>
+		  </ngb-tab>
+		</ngb-tabset>
+	</div>
+</div>

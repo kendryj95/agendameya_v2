@@ -44,6 +44,10 @@ export const Full_ROUTES: Routes = [
     loadChildren: './servicios/servicios.module#ServiciosModule'
   },
   {
+    path: 'suscripcion',
+    loadChildren: './suscripcion/suscripcion.module#SuscripcionModule'
+  },
+  {
     path: 'charts',
     loadChildren: './charts/charts.module#ChartsNg2Module'
   },

@@ -45,6 +45,9 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
+        path: '', title: 'Reportes', icon: 'icon-pie-chart', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    },
+    /*{
         path: '', title: 'Apps', icon: 'icon-screen-desktop', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
             
@@ -200,5 +203,5 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     { path: 'http://pixinvent.com/demo/convex-angular-bootstrap-admin-dashboard-template/documentation', title: 'Documentation', icon: 'icon-book-open', class: '', badge: '', badgeClass: '', isExternalLink: true, submenu: [] },
-    { path: 'https://pixinvent.ticksy.com/', title: 'Support', icon: 'icon-support', class: '', badge: '', badgeClass: '', isExternalLink: true, submenu: [] }
+    { path: 'https://pixinvent.ticksy.com/', title: 'Support', icon: 'icon-support', class: '', badge: '', badgeClass: '', isExternalLink: true, submenu: [] }*/
 ];

@@ -20,6 +20,11 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
+        path: '', title: 'Ventas', icon: 'icon-bag', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [
+            
+        ]
+    },
+    {
         path: '', title: 'Administración', icon: 'icon-settings', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false, submenu: [
             {
                 path: '/superadmins', title: 'Super-Admin', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
@@ -41,6 +46,9 @@ export const ROUTES: RouteInfo[] = [
             },
             {
                 path: '/servicios', title: 'Servicios', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+            },
+            {
+                path: '', title: 'Recursos', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
             }
         ]
     },

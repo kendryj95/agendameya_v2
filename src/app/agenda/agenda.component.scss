@@ -1,0 +1,17 @@
+@media screen and (max-width: 400px) {
+	.btn-movil {
+		text-align: unset !important;
+		margin-top: 10px !important;
+	}
+	.view-movil {
+		padding-left: 15px !important;
+	}
+	.text-date{
+		display: none;
+	}
+	.text-date-movil {
+		display: block !important;
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+}

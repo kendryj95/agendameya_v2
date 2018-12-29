@@ -46,6 +46,7 @@ const colors: any = {
 
 export class AgendaComponent {
   @ViewChild('modalContent') modalContent: TemplateRef<any>;
+  @ViewChild('modalReserva') modalReserva: TemplateRef<any>;
 
   view: string = 'month';
 
@@ -141,7 +142,7 @@ export class AgendaComponent {
 
   handleEvent(action: string, event: CalendarEvent): void {
     this.modalData = { event, action };
-    this.modal.open(this.modalContent, { size: 'lg' });
+    this.modal.open(this.modalReserva, { size: 'lg' });
   }
 
   addEvent(): void {
@@ -162,6 +163,10 @@ export class AgendaComponent {
     // this.refresh.next();
     this.handleEvent('Add new event', this.newEvent);
      this.refresh.next();
+  }
+
+  openReserva() {
+    this.modal.open(this.modalReserva, { size: 'lg' });
   }
 }
 //Calendar event handler ends

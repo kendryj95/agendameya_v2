@@ -1,0 +1,188 @@
+<div class="card">
+	<div class="card-block">
+		<div class="row">
+			<div class="col-md-5">
+				<label for="">&nbsp;</label>
+				<input type="text" class="form-control form-control-sm round">
+			</div>
+			<div class="col-md-1">
+				<label for="">&nbsp;</label>
+				<button class="btn btn-primary btn-sm btn-raised">
+					Buscar
+				</button>
+			</div>
+			<div class="col-md-6 text-right" style="padding-top: 2rem !important">
+				<button class="btn btn-primary btn-sm btn-raised">
+					Agregar
+				</button>
+				<button class="btn btn-primary btn-sm btn-raised ml-1">
+					Editar
+				</button>
+				<button class="btn btn-primary btn-sm btn-raised ml-1">
+					Desactivar
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card-block">
+		<!-- <div class="card-header">
+			<h5>Clientes</h5>
+		</div> -->
+		<div class="row">
+			<div class="col-md-4">
+
+				<h5>Prestadores</h5>
+
+				<ul class="list-group mt-4">
+				    <a href="javascript;">
+				    	<li class="list-group-item active">
+				    		<strong class="font-medium-1">Victor Ortiz</strong><br>
+				    		<span style="font-size: 13px">victor@gmail.com, +571211522202</span>
+						</li></a>
+				        <a href="javascript;">
+				        	<li class="list-group-item">
+				        		<strong class="font-medium-1">Kelly Ortiz</strong><br>
+				        		<span style="font-size: 13px">kelly@gmail.com, +571211522202</span>
+				    		</li></a>
+				</ul>
+			</div>
+			
+			<div class="col-md-5" style="height: 670px; overflow: auto;">
+				<h5>Esquema de horario laboral</h5>				
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4 text-center">
+						Inicio
+					</div>
+					<div class="col-md-4">
+						Término
+					</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Lunes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Martes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Miércoles
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Jueves
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Viernes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Sábado
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Domingo
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12">
+						<button class="btn btn-default btn-raised pull-right">
+							Agregar periodo descanso
+						</button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4 text-center">Inicio</div>
+					<div class="col-md-4 text-center">Término</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Lunes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+					<div class="col-md-4 dias d-flex align-items-center">
+						Martes
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time"></ngb-timepicker>
+					</div>
+					<div class="col-md-4">
+						<ngb-timepicker class="timepicker" [(ngModel)]="time2"></ngb-timepicker>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-12">
+				<div class="row">
+					<div class="col-md-12 center-movil">
+						<button class="btn btn-default btn-sm btn-raised" [routerLink]="['/prestadores']">
+							Detalles
+						</button>
+						<button class="btn btn-primary btn-sm btn-raised ml-1">
+							Esq. horario lab.
+						</button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6" style="text-align: right;">
+						Bloque Itinerario *
+					</div>
+					<div class="col-md-6">
+						<input type="number" name="itinerario" id="itinerario" class="form-control form-control-sm round">
+					</div>
+					<div class="col-md-12 mt-1 text-center">
+						<span class="text-muted font-small-1">Esta opción determina el largo de los bloques al visualizar el itinerario del prestador.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

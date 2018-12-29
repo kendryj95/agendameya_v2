@@ -42,13 +42,13 @@ export const ROUTES: RouteInfo[] = [
                 path: '/prestadores', title: 'Prestadores', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
             },
             {
-                path: '/asistentes', title: 'Asistentes', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
-            },
-            {
                 path: '/servicios', title: 'Servicios', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
             },
             {
-                path: '', title: 'Recursos', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+                path: '/asistentes', title: 'Asistentes', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+            },
+            {
+                path: '/recursos', title: 'Recursos', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
             }
         ]
     },

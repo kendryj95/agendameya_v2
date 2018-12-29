@@ -36,6 +36,10 @@ export const Full_ROUTES: Routes = [
     loadChildren: './prestadores/prestadores.module#PrestadoresModule'
   },
   {
+    path: 'prestadoreshorarios',
+    loadChildren: './prestadoreshorarios/prestadoreshorarios.module#PrestadoreshorariosModule'
+  },
+  {
     path: 'asistentes',
     loadChildren: './asistentes/asistentes.module#AsistentesModule'
   },

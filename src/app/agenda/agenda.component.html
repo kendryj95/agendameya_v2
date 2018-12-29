@@ -52,30 +52,172 @@
 		</div>
 	</ng-template>
 
+	<ng-template #modalReserva let-close="close">
+		<div class="modal-header">
+			<h5 class="modal-title">Nueva Cita</h5>
+			<button type="button" class="close" (click)="close()">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<h5 style="font-weight: normal">Detalles de la cita</h5>
+			<hr>
+			<form action="#">
+				<div class="form-body">
+					<div class="row">
+						<div class="col-md-6 col-12">
+							<div class="form-group">
+								<label for="service">Servicio *</label>
+								<select name="service" id="service" class="form-control form-control-sm">
+									<option value="ServiceA">ServiceA</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-12">
+							<div class="form-group">
+								<label for="startdate">Fecha y Hora de inicio </label>
+								<input type="date" name="startdate" id="startdate" class="form-control form-control-sm">
+							</div>
+						</div>
+
+						<div class="col-md-6 col-12">
+							<div class="form-group">
+								<label for="proveedor">Proveedor *</label>
+								<select name="proveedor" id="proveedor" class="form-control form-control-sm">
+									<option value="">John Doe</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-12">
+							<div class="form-group">
+								<label for="enddate">Fecha y Hora final </label>
+								<input type="date" name="enddate" id="enddate" class="form-control form-control-sm">
+							</div>
+						</div>
+
+						<div class="col-md-6 col-12">
+							<div class="form-group">
+								<label for="note">Notas </label><br>
+								<textarea name="note" id="note" class="form-control-form-control-sm" style="width: 100%;height: 75px;max-height: 75px"></textarea>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-12">
+							<div class="form-group">
+								<label for="state">Estado de la cita *</label>
+								<select name="state" id="state" class="form-control form-control-sm">
+									<option value="">Pendiente</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+
+			<div class="row">
+				<div class="col-md-4" style="padding-right: 0">
+					<h5 style="font-weight: normal">Detalles del cliente</h5>
+				</div>
+				<div class="col-md-3" style="padding-left: 0">
+					<button class="btn btn-default btn-raised btn-sm">Nuevo</button>
+					<button class="btn btn-primary btn-raised btn-sm ml-1">Seleccionar</button>
+				</div>
+			</div>
+			<hr>
+
+			<form action="#">
+				<div class="row">
+					<div class="col-md-6 col-12">
+						<div class="form-group">
+							<label for="name">Nombre * </label>
+							<input type="text" name="name" id="name" class="form-control form-control-sm">
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-12">
+						<div class="form-group">
+							<label for="domicilio">Domicilio </label>
+							<input type="text" name="domicilio" id="domicilio" class="form-control form-control-sm">
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-12">
+						<div class="form-group">
+							<label for="lastname">Apellido * </label>
+							<input type="text" name="lastname" id="lastname" class="form-control form-control-sm">
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-12">
+						<div class="form-group">
+							<label for="city">Ciudad </label>
+							<input type="text" name="city" id="city" class="form-control form-control-sm">
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-12">
+						<div class="form-group">
+							<label for="email">Email * </label>
+							<input type="email" name="email" id="email" class="form-control form-control-sm">
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-12">
+						<div class="form-group">
+							<label for="postal">Código Postal </label>
+							<input type="postal" name="postal" id="postal" class="form-control form-control-sm">
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-12">
+						<div class="form-group">
+							<label for="phone">Número de Teléfono * </label>
+							<input type="text" name="phone" id="phone" class="form-control form-control-sm">
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-12">
+						<div class="form-group">
+							<label for="note">Notas </label><br>
+							<textarea name="note" id="note" class="form-control-form-control-sm" style="width: 100%;height: 75px;max-height: 75px"></textarea>
+						</div>
+					</div>
+				</div>
+			</form>
+
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-sm btn-outline-primary">Guardar</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary" (click)="close()">Cancelar</button>
+		</div>
+	</ng-template>
+
 	<div class="card">
 		<div class="card-body">
 			<div class="card-block">
 				<div class="row">
-					<div class="col-md-1" style="padding-top: 3px">
+					<div class="col-md-1 col-sm-12" style="padding-top: 3px">
 						<label for="franquicia" class="">Franquicia</label>
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-12">
 						<select name="franquicia" id="franquicia" class="form-control form-control-sm">
 							<option value="">EmpresaA</option>
 						</select>
 					</div>
-					<div class="col-md-1" style="padding-top: 3px">
+					<div class="col-md-1 col-sm-12" style="padding-top: 3px">
 						<label for="mostrar" class="">Mostrar</label>
 					</div>
-					<div class="col-md-3" style="padding-left: 0">
+					<div class="col-md-3 col-sm-12 view-movil" style="padding-left: 0">
 						<select name="mostrar" id="mostrar" class="form-control form-control-sm">
 							<option value="">German Vasquez</option>
 						</select>
 					</div>
-					<div class="col-md-5" style="text-align: right;">
-						<button class="btn btn-primary btn-sm btn-raised ml-1">Reserva</button>
+					<div class="col-md-5 col-sm-12 btn-movil" style="text-align: right;">
+						<button class="btn btn-primary btn-sm btn-raised ml-1" (click)="openReserva()">Reserva</button>
 						<button class="btn btn-primary btn-sm btn-raised ml-1">No disponible</button>
-						<button class="btn btn-primary btn-sm btn-raised ml-1">Cargar Nuevamente</button>
+						<button class="btn btn-primary btn-sm btn-raised ml-1">Recargar</button>
 					</div>
 				</div>
 			</div>
@@ -86,55 +228,60 @@
 		<div class="card-body">
 			<div class="card-block">
 				<div class="d-flex flex-wrap justify-content-md-between mb-3 no-gutters">
+					<div class="text-date-movil" style="display: none;">
+						<div class="col text-center align-self-center">
+							<h6 class="text-uppercase mb-0">{{ viewDate | calendarDate:(view + 'ViewTitle'):'es-CO' }}</h6>
+						</div>
+					</div>
 					<div class="col">
 						<div class="btn-group d-none d-sm-none d-md-none d-lg-block">
-							<a class="btn btn-raised btn-primary" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate">
+							<a class="btn btn-raised btn-primary btn-sm" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate">
 								<i class="ft-chevron-left"></i>
 							</a>
-							<a class="btn btn-raised btn-danger" mwlCalendarToday [(viewDate)]="viewDate">
+							<a class="btn btn-raised btn-danger btn-sm" mwlCalendarToday [(viewDate)]="viewDate">
 								<i class="ft-clipboard"></i>
 							</a>
-							<a class="btn btn-raised btn-primary" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate">
+							<a class="btn btn-raised btn-primary btn-sm" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate">
 								<i class="ft-chevron-right"></i>
 							</a>
 						</div>
 
 						<div class="btn-group d-block d-sm-block d-md-block d-lg-none">
-							<a class="btn btn-raised btn-primary ft-chevron-left" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate">
+							<a class="btn btn-raised btn-primary btn-sm ft-chevron-left" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate">
 								<i class="icon icon-arrows-left"></i>
 							</a>
-							<a class="btn btn-raised btn-danger ft-bookmark" mwlCalendarToday [(viewDate)]="viewDate">
+							<a class="btn btn-raised btn-danger btn-sm ft-bookmark" mwlCalendarToday [(viewDate)]="viewDate">
 								<i class="icon icon-arrows-sign-down"></i>
 							</a>
-							<a class="btn btn-raised btn-primary ft-chevron-right" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate">
+							<a class="btn btn-raised btn-primary btn-sm ft-chevron-right" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate">
 								<i class="icon icon-arrows-right"></i>
 							</a>
 						</div>
 					</div>
-					<div class="col text-center align-self-center">
+					<div class="col text-center align-self-center text-date">
 						<h6 class="text-uppercase mb-0">{{ viewDate | calendarDate:(view + 'ViewTitle'):'es-CO' }}</h6>
 					</div>
 					<div class="col text-right">
 						<div class="btn-group d-none d-sm-none d-md-none d-lg-block">
-							<a class="btn btn-raised btn-primary" (click)="view = 'month'" [class.active]="view === 'month'">
+							<a class="btn btn-raised btn-primary btn-sm" (click)="view = 'month'" [class.active]="view === 'month'">
 								Mes
 							</a>
-							<a class="btn btn-raised btn-primary" (click)="view = 'week'" [class.active]="view === 'week'">
+							<a class="btn btn-raised btn-primary btn-sm" (click)="view = 'week'" [class.active]="view === 'week'">
 								Semana
 							</a>
-							<a class="btn btn-raised btn-primary" (click)="view = 'day'" [class.active]="view === 'day'">
+							<a class="btn btn-raised btn-primary btn-sm" (click)="view = 'day'" [class.active]="view === 'day'">
 								Día
 							</a>
 						</div>
 
 						<div class="btn-group d-block d-sm-block d-md-block d-lg-none">
-							<a class="btn btn-raised btn-primary btn-icon-icon" (click)="view = 'month'" [class.active]="view === 'month'">
+							<a class="btn btn-raised btn-primary btn-sm btn-icon-icon" (click)="view = 'month'" [class.active]="view === 'month'">
 								<i class="fa fa-th"></i>
 							</a>
-							<a class="btn btn-raised btn-primary btn-icon-icon" (click)="view = 'week'" [class.active]="view === 'week'">
+							<a class="btn btn-raised btn-primary btn-sm btn-icon-icon" (click)="view = 'week'" [class.active]="view === 'week'">
 								<i class="fa fa-columns"></i>
 							</a>
-							<a class="btn btn-raised btn-primary btn-icon-icon" (click)="view = 'day'" [class.active]="view === 'day'">
+							<a class="btn btn-raised btn-primary btn-sm btn-icon-icon" (click)="view = 'day'" [class.active]="view === 'day'">
 								<i class="fa fa-th-list"></i>
 							</a>
 						</div>

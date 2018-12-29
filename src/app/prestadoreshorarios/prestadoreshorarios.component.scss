@@ -6,6 +6,12 @@
 	font-size: 19px;
 }
 
+ngb-timepicker {
+	button {
+		margin-bottom: 0;
+	}
+}
+
 @media screen and (max-width: 1020px) {
 	.center-movil {
 		text-align: center;

@@ -3,22 +3,22 @@
 		<div class="row">
 			<div class="col-md-5">
 				<label for="">&nbsp;</label>
-				<input type="text" class="form-control round">
+				<input type="text" class="form-control form-control-sm round">
 			</div>
 			<div class="col-md-1">
 				<label for="">&nbsp;</label>
-				<button class="btn btn-primary btn-raised">
+				<button class="btn btn-primary btn-sm btn-raised">
 					Buscar
 				</button>
 			</div>
 			<div class="col-md-6 text-right" style="padding-top: 2rem !important">
-				<button class="btn btn-primary btn-raised">
+				<button class="btn btn-primary btn-sm btn-raised">
 					Agregar
 				</button>
-				<button class="btn btn-primary btn-raised ml-1">
+				<button class="btn btn-primary btn-sm btn-raised ml-1">
 					Editar
 				</button>
-				<button class="btn btn-primary btn-raised ml-1">
+				<button class="btn btn-primary btn-sm btn-raised ml-1">
 					Desactivar
 				</button>
 			</div>
@@ -43,13 +43,13 @@
 		      		<ul class="list-group mt-4">
 		      		    <a href="javascript;">
 		      		    	<li class="list-group-item active">
-		      		    		<strong class="font-medium-3">NombreA - FranquiciaA</strong><br>
-		      		    		<span>30min</span>, <span>$50 Pesos Argentino</span>
+		      		    		<strong class="font-medium-1">NombreA - FranquiciaA</strong><br>
+		      		    		<span style="font-size: 13px">30min, $50 Pesos Argentino</span>
 		      				</li></a>
 		      		        <a href="javascript;">
 		      		        	<li class="list-group-item">
-		      		        		<strong class="font-medium-3">NombreB - FranquiciaB</strong><br>
-		      		        		<span>60min</span>, <span>USD25 Dolares Americanos</span>
+		      		        		<strong class="font-medium-1">NombreB - FranquiciaB</strong><br>
+		      		        		<span style="font-size: 13px">60min, USD25 Dolares Americanos</span>
 		      		    		</li></a>
 		      		</ul>
 		      	</div>
@@ -62,31 +62,31 @@
 
 		      				<div class="form-group">
 		      					<label for="name">Franquicia</label>
-		      					<select name="franquicia" id="franquicia" class="form-control">
+		      					<select name="franquicia" id="franquicia" class="form-control form-control-sm">
 		      						<option value="" selected>EmpresaA</option>
 		      					</select>
 		      				</div>
 
 		      				<div class="form-group">
 		      					<label for="name">Nombre</label>
-		      					<input type="text" id="name" class="form-control round" name="name" value="NombreC">
+		      					<input type="text" id="name" class="form-control form-control-sm round" name="name" value="NombreC">
 		      				</div>
 
 		      				<div class="form-group">
 		      					<label for="duracion">Duración (Minutos)</label>
-		      					<input type="number" id="duracion" class="form-control round" name="duracion" value="20">
+		      					<input type="number" id="duracion" class="form-control form-control-sm round" name="duracion" value="20">
 		      				</div>
 
 
 		      				<div class="form-group">
 		      					<label for="price">Precio</label>
-		      					<input type="number" id="price" class="form-control round" name="price" value="987415236">
+		      					<input type="number" id="price" class="form-control form-control-sm round" name="price" value="987415236">
 		      				</div>
 
 
 		      				<div class="form-group">
 		      					<label for="currency">Moneda</label>
-		      					<select name="currency" id="currency" class="form-control">
+		      					<select name="currency" id="currency" class="form-control form-control-sm">
 		      						<option value="USD">Dolares Americanos (USD)</option>
 		      						<option value="Reales">Reales (R$)</option>
 		      						<option value="PesosMex">Pesos Mexicanos ($)</option>
@@ -103,12 +103,12 @@
 
 		      				<div class="form-group">
 		      					<label for="category">Categoría de servicio</label>
-		      					<input type="text" id="category" class="form-control round" name="category" value="Categoria A">
+		      					<input type="text" id="category" class="form-control form-control-sm round" name="category" value="Categoria A">
 		      				</div>
 
 		      				<div class="form-group">
 		      					<label for="category">Descripción *</label>
-		      					<textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Descripción"></textarea>
+		      					<textarea name="description" id="" cols="30" rows="10" class="form-control form-control-sm" placeholder="Descripción"></textarea>
 		      				</div>
 		      			</div>
 		      		</form>
@@ -120,14 +120,14 @@
 		      		        <div class="form-group">
 		      		            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
 		      		                <input type="checkbox" class="custom-control-input" checked id="number_session">
-		      		                <label class="custom-control-label float-left" for="number_session">Limitar numero de sesiones en el mismo horario</label>
+		      		                <label class="custom-control-label float-left" for="number_session">Limitar número de sesiones en el mismo horario</label>
 		      		            </div>
 		      		        </div>
 		      		        
 		      		        
 		      		        <div class="form-group">
 		      		            <label for="mode">Modo atenciones</label>
-		      		            <select name="mode" id="mode" class="form-control">
+		      		            <select name="mode" id="mode" class="form-control form-control-sm">
 		      		            	<option value="FixedAco">Fixed acotada</option>
 		      		            	<option value="Flexible">Flexible ilimitada</option>
 		      		            </select>
@@ -136,7 +136,7 @@
 		      		        
 		      		        <div class="form-group">
 		      		            <label for="atenciones">Atenciones durante el mismo horario</label>
-		      		            <input type="number" id="atenciones" class="form-control round" name="atenciones" value="2">
+		      		            <input type="number" id="atenciones" class="form-control form-control-sm round" name="atenciones" value="2">
 		      		        </div>
 		      		        
 		      		        <div class="form-group">
@@ -148,12 +148,12 @@
 
 		      		        <div class="form-group">
 		      		            <label for="cant_sessions">Cantidad de sesiones</label>
-		      		            <input type="number" id="cant_sessions" class="form-control round" name="cant_sessions" value="2">
+		      		            <input type="number" id="cant_sessions" class="form-control form-control-sm round" name="cant_sessions" value="2">
 		      		        </div>
 
 		      		        <div class="form-group">
 		      		            <label for="indications">Indicaciones</label>
-		      		            <textarea name="indications" id="indications" cols="30" rows="10" class="form-control" placeholder="Describa indicaciones o instrucciones a sus clientes"></textarea>
+		      		            <textarea name="indications" id="indications" cols="30" rows="10" class="form-control form-control-sm" placeholder="Describa indicaciones o instrucciones a sus clientes"></textarea>
 		      		        </div>
 
 		      		        <div class="form-group">
@@ -192,11 +192,11 @@
 		      		<ul class="list-group mt-4">
 		      		    <a href="javascript;">
 		      		    	<li class="list-group-item active">
-		      		    		<strong class="font-medium-3">CategoríaA</strong><br>
+		      		    		<strong class="font-medium-1">CategoríaA</strong><br>
 		      				</li></a>
 		      		        <a href="javascript;">
 		      		        	<li class="list-group-item">
-		      		        		<strong class="font-medium-3">CategoríaB</strong><br>
+		      		        		<strong class="font-medium-1">CategoríaB</strong><br>
 		      		    		</li></a>
 		      		</ul>
 		      	</div>
@@ -209,19 +209,19 @@
 
 		      				<div class="form-group">
 		      					<label for="name">Franquicia</label>
-		      					<select name="franquicia" id="franquicia" class="form-control">
+		      					<select name="franquicia" id="franquicia" class="form-control form-control-sm">
 		      						<option value="" selected>EmpresaA</option>
 		      					</select>
 		      				</div>
 
 		      				<div class="form-group">
 		      					<label for="name">Nombre</label>
-		      					<input type="text" id="name" class="form-control round" name="name" value="CategoríaA">
+		      					<input type="text" id="name" class="form-control form-control-sm round" name="name" value="CategoríaA">
 		      				</div>
 
 		      				<div class="form-group">
 		      					<label for="description">Descripcion *</label>
-		      					<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Descripción"></textarea>
+		      					<textarea name="" id="" cols="30" rows="5" class="form-control form-control-sm" placeholder="Descripción"></textarea>
 		      				</div>
 		      			</div>
 		      		</form>

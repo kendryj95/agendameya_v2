@@ -3,22 +3,22 @@
 		<div class="row">
 			<div class="col-md-5">
 				<label for="">&nbsp;</label>
-				<input type="text" class="form-control round">
+				<input type="text" class="form-control form-control-sm round">
 			</div>
 			<div class="col-md-1">
 				<label for="">&nbsp;</label>
-				<button class="btn btn-primary btn-raised">
+				<button class="btn btn-primary btn-sm btn-raised">
 					Buscar
 				</button>
 			</div>
 			<div class="col-md-6 text-right" style="padding-top: 2rem !important">
-				<button class="btn btn-primary btn-raised">
+				<button class="btn btn-primary btn-sm btn-raised">
 					Agregar
 				</button>
-				<button class="btn btn-primary btn-raised ml-1">
+				<button class="btn btn-primary btn-sm btn-raised ml-1">
 					Editar
 				</button>
-				<button class="btn btn-primary btn-raised ml-1">
+				<button class="btn btn-primary btn-sm btn-raised ml-1">
 					Desactivar
 				</button>
 			</div>
@@ -39,13 +39,13 @@
 				<ul class="list-group mt-4">
 				    <a href="javascript;">
 				    	<li class="list-group-item active">
-				    		<strong class="font-medium-3">Victor Ortiz</strong><br>
-				    		<span>victor@gmail.com</span>, <span>+571211522202</span>
+				    		<strong class="font-medium-1">Victor Ortiz</strong><br>
+				    		<span style="font-size: 13px">victor@gmail.com, +571211522202</span>
 						</li></a>
 				        <a href="javascript;">
 				        	<li class="list-group-item">
-				        		<strong class="font-medium-3">Kelly Ortiz</strong><br>
-				        		<span>kelly@gmail.com</span>, <span>+571211522202</span>
+				        		<strong class="font-medium-1">Kelly Ortiz</strong><br>
+				        		<span style="font-size: 13px">kelly@gmail.com, +571211522202</span>
 				    		</li></a>
 				</ul>
 			</div>
@@ -58,38 +58,38 @@
 
 						<div class="form-group">
 							<label for="name">Franquicia</label>
-							<select name="franquicia" id="franquicia" class="form-control">
+							<select name="franquicia" id="franquicia" class="form-control form-control-sm">
 								<option value="" selected>EmpresaA</option>
 							</select>
 						</div>
 
 						<div class="form-group">
 							<label for="name">Nombre</label>
-							<input type="text" id="name" class="form-control round" name="name" value="Victor">
+							<input type="text" id="name" class="form-control form-control-sm round" name="name" value="Victor">
 						</div>
 
 						<div class="form-group">
 							<label for="lastname">Apellido</label>
-							<input type="text" id="lastname" class="form-control round" name="lastname" value="Ortiz">
+							<input type="text" id="lastname" class="form-control form-control-sm round" name="lastname" value="Ortiz">
 						</div>
 
 						<div class="form-group">
 								<label for="name">Local</label>
-								<select name="local" id="local" class="form-control">
+								<select name="local" id="local" class="form-control form-control-sm">
 									<option value="" selected>LocalA</option>
 								</select>
 							</div>
 
 
 						<div class="form-group">
-							<label for="phone">Numero de Telefono</label>
-							<input type="text" id="phone" class="form-control round" name="phone" value="987415236">
+							<label for="phone">número de teléfono</label>
+							<input type="text" id="phone" class="form-control form-control-sm round" name="phone" value="987415236">
 						</div>
 
 
 						<div class="form-group">
-							<label for="phoneMovil">Numero de Movil</label>
-							<input type="text" id="phoneMovil" class="form-control round" name="phoneMovil" value="7616512561">
+							<label for="phoneMovil">número de Movil</label>
+							<input type="text" id="phoneMovil" class="form-control form-control-sm round" name="phoneMovil" value="7616512561">
 						</div>
 					</div>
 				</form>
@@ -97,38 +97,38 @@
 			<div class="col-md-4">
 
 				<div class="row">
-					<div class="col-md-12">
-						<button class="btn btn-primary btn-raised">
+					<div class="col-md-12 center-movil">
+						<button class="btn btn-primary btn-sm btn-raised">
 							Detalles
 						</button>
-						<button class="btn btn-default btn-raised ml-1">
+						<button class="btn btn-default btn-sm btn-raised ml-1" [routerLink]="['/prestadoreshorarios']">
 							Esquema de horario laboral
 						</button>
 					</div>
 				</div>
 
-				<form action="" class="form">
+				<form action="" class="form" style="padding-top: 13px">
 				    <div class="form-body">
 				        <div class="form-group">
 				            <label for="email">Email</label>
-				            <input type="email" id="email" class="form-control round" name="email" value="ortiz@gmail.com">
+				            <input type="email" id="email" class="form-control form-control-sm round" name="email" value="ortiz@gmail.com">
 				        </div>
 				        
 				        
 				        <div class="form-group">
 				            <label for="password">Contraseña *</label>
-				            <input type="password" id="password" class="form-control round" name="password" value="123456789">
+				            <input type="password" id="password" class="form-control form-control-sm round" name="password" value="123456789">
 				        </div>
 				        
 				        
 				        <div class="form-group">
 				            <label for="passwordR">Reingrese su contraseña *</label>
-				            <input type="password" id="passwordR" class="form-control round" name="passwordR" value="987415263">
+				            <input type="password" id="passwordR" class="form-control form-control-sm round" name="passwordR" value="987415263">
 				        </div>
 				        
 				        <div class="form-group">
 				            <label for="calendar">Calendario</label>
-				            <select name="calendar" id="calendar" class="form-control">
+				            <select name="calendar" id="calendar" class="form-control form-control-sm">
 				                <option value="" selected>Default</option>
 				            </select>
 				        </div>

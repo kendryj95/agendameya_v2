@@ -68,6 +68,7 @@
             var $subList = $listItem.children('ul');
 
             $subList.show().slideUp(200, function() {
+                console.log("se abre");
                 $(this).css('display', '');
 
                 $(this).find('> li').removeClass('is-shown');
@@ -88,6 +89,7 @@
             $listItem.addClass('open');
 
             $subList.hide().slideDown(200, function() {
+                console.log("se cierra");
                 $(this).css('display', '');
 
                 if (callback) {
@@ -158,6 +160,8 @@
                 $wrapper.removeClass('menu-collapsed');
                 setTimeout(function(){ 
                     $wrapper.removeClass('menu-animation');
+                    $('#logo-sidebar').show();
+                    $('.logo-img').hide();
                 }, 150);
                 var $listItem = $('.navigation li.nav-collapsed-open'),
                 $subList = $listItem.children('ul');
@@ -176,6 +180,8 @@
                 $wrapper.addClass('menu-collapsed');
                 setTimeout(function(){ 
                     $wrapper.addClass('menu-animation');
+                    $('#logo-sidebar').hide();
+                    $('.logo-img').show();
                 }, 150);
                 var $listItem = $('.navigation li.open'),
                 $subList = $listItem.children('ul');

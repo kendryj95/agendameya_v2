@@ -17,3 +17,13 @@ ngb-timepicker {
 		text-align: center;
 	}
 }
+
+@media screen and (max-width: 420px) {
+	.mgMovil {
+		margin-top: 10px !important;
+	}
+
+	.mgMovilTwo {
+		margin-top: 25px !important;
+	}
+}

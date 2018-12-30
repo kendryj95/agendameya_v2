@@ -41,7 +41,6 @@ import { NgButtonsComponent } from './bootstrap/ng-buttons/ng-buttons.component'
 import { SweetAlertsComponent } from "./extra/sweet-alerts/sweet-alerts.component";
 import { ToastrComponent } from "./extra/toastr/toastr.component";
 import { UploadComponent } from './extra/upload/upload.component';
-//import { EditorComponent } from './extra/editor/editor.component';
 import { DragDropComponent } from './extra/drag-drop/drag-drop.component';
 import { TourComponent } from './extra/tour/tour.component';
 import { TagsInputComponent } from './extra/tags-input/tags-input.component';

@@ -165,6 +165,22 @@ export class AgendaComponent {
      this.refresh.next();
   }
 
+  formatterDateText(){
+
+    if (this.view == 'week') {
+      setTimeout(()=>{
+        let textWeek = $('.text-date h6').text();
+        console.log($('.text-date h6').text());
+
+        textWeek = textWeek.replace('Week', 'SEMANA');
+        textWeek = textWeek.replace('of', 'DE');
+
+        $('.text-date h6').text(textWeek);
+      },200)
+    }
+    
+  }
+
   openReserva() {
     this.modal.open(this.modalReserva, { size: 'lg' });
   }

@@ -5,3 +5,13 @@
 .nameService {
 	font-size: 19px;
 }
+
+@media screen and (max-width: 420px) {
+	.mgMovil {
+		margin-top: 10px !important;
+	}
+
+	.mgMovilTwo {
+		margin-top: 25px !important;
+	}
+}

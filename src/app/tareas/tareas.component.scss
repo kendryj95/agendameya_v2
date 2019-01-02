@@ -70,4 +70,10 @@
     margin-top: -8px;
     line-height: 16px;
   }
+
+  @media screen and (max-width: 420px) {
+    .mgMovil {
+      margin-left: 15px;
+    }
+  }
   

@@ -48,7 +48,7 @@ export class AgendaComponent {
   @ViewChild('modalContent') modalContent: TemplateRef<any>;
   @ViewChild('modalReserva') modalReserva: TemplateRef<any>;
 
-  view: string = 'month';
+  view: string = 'week';
 
   newEvent: CalendarEvent;
 

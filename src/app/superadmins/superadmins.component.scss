@@ -7,6 +7,19 @@
 }
 
 @media screen and (max-width: 420px) {
+
+	.inputSearchMovil {
+		width: 70% !important;
+		padding-right: 0 !important;
+	}
+	.btnSearchMovil {
+		width: 30% !important;
+	}
+	.btnActionsMovil {
+		padding-top: 0 !important;
+		text-align: center !important;
+	}
+
 	.mgMovil {
 		margin-top: 10px !important;
 	}

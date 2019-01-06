@@ -4,3 +4,18 @@
         margin-bottom: -2px;
     }
 }
+
+@media screen and (max-width: 420px) {
+	.imgMovil {
+		width: 50% !important;
+	}
+
+	.blockMovil {
+		display: flex !important;
+		width: 50% !important;
+	}
+
+	.hideMovil {
+		display: none;
+	}
+}

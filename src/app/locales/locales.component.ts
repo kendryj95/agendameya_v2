@@ -21,7 +21,6 @@ export class LocalesComponent implements OnInit {
   constructor(){
     $(document).ready(()=>{ // Forzar a los botones de timepicker que no tenga margin bottom
       $('ngb-timepicker button').css('marginBottom', '0');
-      console.log($('ngb-timepicker button'));
     })
   }
 
